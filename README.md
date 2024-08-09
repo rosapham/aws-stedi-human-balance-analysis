@@ -1,3 +1,5 @@
+# STEDI Human Balance Analysis
+
 ## Project Details
 
 The STEDI Team has been hard at work developing a hardware STEDI Step Trainer that:
@@ -45,3 +47,7 @@ Step 5:
 - Go to Athena to explore the data in these tables
 
 Step 6:
+The Data Science team has done some preliminary data analysis and determined that the Accelerometer Records each match one of the Customer Records. They would like the Data Engineering team to create 2 AWS Glue Jobs that do the following:
+- Sanitize the Customer data from the Website (Landing Zone) and only store the Customer Records who agreed to share their data for research purposes (Trusted Zone) - creating a Glue Table called customer_trusted.
+- Sanitize the Accelerometer data from the Mobile App (Landing Zone) - and only store Accelerometer Readings from customers who agreed to share their data for research purposes (Trusted Zone) - creating a Glue Table called accelerometer_trusted.
+Note: Change the Compression Type as 'None' for the Customer Trusted and Accelerometer target nodes.
