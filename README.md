@@ -40,9 +40,8 @@ Step 3: IAM Role
 Step 4:
 To simulate the data coming from the various sources, we need to create our own S3 directories for customer_landing, step_trainer_landing, and accelerometer_landing zones, and copy the data there as a starting point.
 
-Step 5:
-- Create a Glue Job to create a Customer Trusted Zone
+Step 5: 
+- Create a 'stedi' database and 2 tables 'customer_landing' and 'accelerometer in Data Catalog
+- Go to Athena to explore the data in these tables
 
-Step 6: 
-- Create a database and customer_landing table in Data Catalog
-- Go to Athena to explore the data in customer_landing table
+Step 6:
